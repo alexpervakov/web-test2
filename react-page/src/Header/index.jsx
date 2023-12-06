@@ -1,8 +1,10 @@
-import logo from '../../assets/disney_logo_dark@2x-45d70f7dd57b.png';
+import React from 'react';
+import logo from '../assets/disney_logo_dark@2x-45d70f7dd57b.png';
+import styles from './index.module.css';
 
 const Header = () => {
     return (
-        <header>
+        <header className={styles.header}>
             <img src={logo} alt="logo" />
             <a href="#">DISNEY+</a>
             <a href="#">SHOP</a>
@@ -14,4 +16,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

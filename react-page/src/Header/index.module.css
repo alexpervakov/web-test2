@@ -1,0 +1,20 @@
+.header {
+    margin: 14px 170px;
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+
+}
+
+.header img {
+    width: 95px;
+    height: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
