@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import './index.module.css';
+import './HamburgerMenu.css'
 // import logo from '../assets/disney_logo_dark@2x-45d70f7dd57b.png';
 
-const HamburgerMenu = () => {
+function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="hamburger-menu">
+    <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
       <button className="hamburger-icon" onClick={toggleMenu}>
-        ☰
+        <div className="line"></div>
+
+        <div className="line"></div>
       </button>
       {isOpen && (
         <div className="menu-items">
@@ -25,7 +27,7 @@ const HamburgerMenu = () => {
       )}
     </div>
   );
-};
+}
 
 export default HamburgerMenu;
 
