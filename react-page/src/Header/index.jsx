@@ -12,16 +12,20 @@ function HamburgerMenu() {
     <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
       <button className="hamburger-icon" onClick={toggleMenu}>
         <div className="line"></div>
-
         <div className="line"></div>
       </button>
       {isOpen && (
         <div className="menu-items">
           <a href="disney">DISNEY+</a>
+          <div className='line1'></div>
           <a href="shop">SHOP</a>
+          <div className='line1'></div>
           <a href="movies">MOVIES</a>
+          <div className='line1'></div>
           <a href="shows">SHOWS</a>
+          <div className='line1'></div>
           <a href="parks">PARKS</a>
+          <div className='line1'></div>
           <a href="disney">DISNEY100</a>
         </div>
       )}
