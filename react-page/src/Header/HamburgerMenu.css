@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin: 40px 2px;
+    margin: 22px 2px;
 }
 
 .line {
-    width: 20px;
+    width: 17px;
     height: 2px;
     background-color: black;
-    margin: 4px 17px 5px;
+    margin: 3px 16px 3px;
     transition: transform 0.3s ease;
 }
 
 .open .line:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
 }
 
 .open .line:nth-child(2) {
-    transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
 }
 
 .links {
@@ -27,16 +27,19 @@
 
 .open .links {
     display: block;
+    position: relative;
 }
 
 .links a {
     text-decoration: none;
-    left: 30px;
-    font-weight: 700;
+    left: 40px;
+    font-size: 14px;
+    font-weight: bold;
     color: black;
     display: block;
-    padding: 30px 0;
-    position: relative;
+    margin: 10px 40px 0;
+    padding: 20px 0;
+    /* position: relative; */
 }
 
 
@@ -52,4 +55,5 @@
 
 .links a:first-child {
     border-top: 2px solid black;
+    width: 100%;
 }
